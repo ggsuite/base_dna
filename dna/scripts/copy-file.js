@@ -23,7 +23,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { blue, green, red, yellow } from './functions/colors.js';
+import { blue, gray, green, red, yellow } from './functions/colors.js';
 
 // Enable __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -95,6 +95,6 @@ try {
       blue(`"${destinationRelative}"`),
   );
 } catch (err) {
-  console.error(red('❌ Error while copying file:', err.message));
+  console.error(red('❌ Error while copying file:'), gray(err.message));
   process.exit(1);
 }

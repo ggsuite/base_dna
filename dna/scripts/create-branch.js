@@ -17,16 +17,8 @@
  *   node scripts/create-branch.js Add Version Tag   # -> add-version-tag
  */
 
-import { execSync } from 'child_process';
-import { blue, gray, green, red } from './functions/colors.js';
-
-function runCommand(command, silent = true) {
-  console.log(gray(`# ${command}`));
-  return execSync(command, {
-    encoding: 'utf-8',
-    stdio: silent ? ['pipe', 'pipe', 'pipe'] : undefined,
-  }).trim();
-}
+import { blue, green, red } from './functions/colors.js';
+import { runCommand } from './functions/run-command.js';
 
 // Converts a string to kebab-case
 function toKebabCase(str) {
@@ -53,4 +45,5 @@ try {
   console.log('✅ ' + green('Created new branch: ') + blue(kebabCaseName));
 } catch (error) {
   console.error(red('Failed to create branch: ' + error.message));
+  process.exit(1);
 }

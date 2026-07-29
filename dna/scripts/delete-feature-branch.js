@@ -41,19 +41,50 @@ function hasUnpushedCommits(branch) {
   }
 }
 
-// Try a test merge into main and check if it introduces changes
+// Abort a running merge. Does nothing when no merge is in progress, because
+// 'git merge --abort' fails in that case.
+function abortMergeIfAny() {
+  try {
+    runCommand('git rev-parse --verify --quiet MERGE_HEAD');
+  } catch {
+    return; // No merge in progress
+  }
+
+  try {
+    runCommand('git merge --abort');
+  } catch {}
+}
+
+// True when all commits of the branch are already contained in main
+function isAncestorOfMain(featureBranch) {
+  try {
+    runCommand(`git merge-base --is-ancestor ${featureBranch} main`);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Check if the branch has landed on main, either as a merge commit or squashed
 function isBranchEffectivelyMerged(featureBranch) {
   console.log(gray('Check if feature was fully merged'));
 
+  // Merge commit or fast forward: the commits themselves are part of main.
+  // A test merge would report 'Already up to date' and leave no merge to
+  // abort, so this case has to be checked first.
+  if (isAncestorOfMain(featureBranch)) {
+    return true;
+  }
+
+  // Squash merge: the commits are not part of main, but their changes are.
+  // A test merge therefore introduces no changes.
   try {
     runCommand(`git merge --no-commit --no-ff ${featureBranch}`);
     const changed = hasUncommittedChanges();
-    runCommand('git merge --abort');
+    abortMergeIfAny();
     return !changed;
   } catch {
-    try {
-      runCommand('git merge --abort');
-    } catch {}
+    abortMergeIfAny();
     return false;
   }
 }
@@ -89,7 +120,14 @@ try {
   const isMerged = isBranchEffectivelyMerged(currentBranch);
 
   if (isMerged) {
-    runCommand(`git branch -d ${currentBranch}`);
+    try {
+      runCommand(`git branch -d ${currentBranch}`);
+    } catch {
+      // Squash merged branches are not 'merged' in git's own sense, so -d
+      // refuses to delete them. We have verified above that the changes are
+      // on main, therefore forcing the deletion is safe here.
+      runCommand(`git branch -D ${currentBranch}`);
+    }
     console.log(green(`✅ Branch '${currentBranch}' has been deleted.`));
   } else {
     console.error(
@@ -103,8 +141,6 @@ try {
   }
 } catch (error) {
   console.error(red(`Error: ${error.message}`));
-  try {
-    runCommand('git merge --abort');
-  } catch {}
+  abortMergeIfAny();
   process.exit(1);
 }

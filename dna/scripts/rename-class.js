@@ -1,4 +1,12 @@
-#!/bin/node
+#!/usr/bin/env node
+
+/*
+ * @license
+ * Copyright (c) ggsuite
+ *
+ * Use of this source code is governed by terms that can be
+ * found in the LICENSE file in the root of this package.
+ */
 
 /**
  * Renames a class throughout the current working directory: rewrites imports,
@@ -50,7 +58,14 @@ const toSnakeCase = (str) => {
 };
 
 const toLowerCamelCase = (str) => {
-  return str.replace(/([-_]\w)/g, (matches) => matches[1].toUpperCase());
+  const camelCase = str.replace(/([-_]\w)/g, (matches) =>
+    matches[1].toUpperCase(),
+  );
+
+  // 'MyThing' must become 'myThing'. Without this the lower camel case form of
+  // an UpperCamelCase input stays upper case, and instance names like 'item'
+  // are then rewritten by the kebab-case rule into invalid identifiers.
+  return camelCase.charAt(0).toLowerCase() + camelCase.slice(1);
 };
 
 const toUpperCamelCase = (str) => {
@@ -95,10 +110,12 @@ const replaceInFiles = (directory) => {
       replaceInFiles(fullPath);
     } else if (shouldProcessFile(file.name)) {
       let content = fs.readFileSync(fullPath, 'utf8');
+      // The names are anchored at word boundaries. Without that, a short class
+      // name like 'Item' would also be replaced inside unrelated identifiers.
       content = content
-        .replace(new RegExp(classAUpper, 'g'), classBUpper)
-        .replace(new RegExp(classALower, 'g'), classBLower)
-        .replace(new RegExp(classASnake, 'g'), classBSnake);
+        .replace(new RegExp(`\\b${classAUpper}\\b`, 'g'), classBUpper)
+        .replace(new RegExp(`\\b${classALower}\\b`, 'g'), classBLower)
+        .replace(new RegExp(`\\b${classASnake}\\b`, 'g'), classBSnake);
       fs.writeFileSync(fullPath, content, 'utf8');
     }
   }

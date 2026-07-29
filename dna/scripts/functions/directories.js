@@ -13,6 +13,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// This file lives in <workSpaceDir>/scripts/functions
 export const workSpaceDir = join(__dirname, '..', '..');
 export const distDir = join(workSpaceDir, 'dist');
 export const srcDir = join(workSpaceDir, 'src');

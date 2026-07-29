@@ -54,7 +54,7 @@ function getPRStatus() {
 async function checkIfPipelineHasFailed() {
   try {
     const json = runCommand(
-      'gh run list --repo rljson/template-project --limit 1 --json status,conclusion',
+      'gh run list --limit 1 --json status,conclusion',
       true,
       false,
     ).trim();
@@ -72,10 +72,23 @@ async function checkIfPipelineHasFailed() {
   }
 }
 
+// Give up after this many milliseconds, so the script cannot block a CI job
+// forever. Override with WAIT_FOR_PR_TIMEOUT_MS.
+const timeoutMs = Number(process.env.WAIT_FOR_PR_TIMEOUT_MS ?? 2 * 60 * 60_000);
+
 async function waitForPRClosure() {
   console.log(yellow('Wait for pipelines, code review and merge ...'));
 
+  const deadline = Date.now() + timeoutMs;
+
   while (true) {
+    if (Date.now() > deadline) {
+      console.error(
+        red(`Timeout: PR was not closed within ${timeoutMs / 60_000} minutes.`),
+      );
+      process.exit(1);
+    }
+
     const status = getPRStatus();
 
     if (status === 'MERGED') {
@@ -83,9 +96,6 @@ async function waitForPRClosure() {
       break;
     } else if (status === 'CLOSED') {
       console.log(green('PR has been closed.'));
-      break;
-    } else if (status === 'FAILED') {
-      console.log(red('Error: PR has failed.'));
       break;
     }
 
