@@ -9,7 +9,7 @@
     "**/build": true
   },
 
-  "editor.tabSize": 2,
+  "editor.tabSize": 3,
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
     "source.organizeImports": "always"
