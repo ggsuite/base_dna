@@ -7,7 +7,7 @@
       "path": null,
       "resolvedVersion": "5.0.0",
       "via": null,
-      "hash": "0xcffc5680bbebfbc8"
+      "hash": "0x730f5646ad3a3842"
     },
     {
       "name": "self",
@@ -40,7 +40,7 @@
     },
     {
       "path": ".claude/skills/review/SKILL.md",
-      "hash": "0xfbd1665a7e3bea6e"
+      "hash": "0x345dd9e198274000"
     },
     {
       "path": ".gitattributes",
@@ -96,7 +96,7 @@
     },
     {
       "path": "doc/guides/dna.md",
-      "hash": "0x090a295d1f2fc09c"
+      "hash": "0xa4be08d19e927570"
     },
     {
       "path": "doc/guides/gg_kidney.md",
@@ -251,6 +251,6 @@
     "claudeMdInclude": null
   },
   "baseVersion": "5.0.0",
-  "baseHash": "0xcffc5680bbebfbc8",
+  "baseHash": "0x730f5646ad3a3842",
   "hash": null
 }

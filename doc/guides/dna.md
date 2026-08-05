@@ -1,9 +1,18 @@
 # The DNA System
 
-`gg_dna` keeps a family of repositories consistent: shared conventions,
-Claude skills, scripts, and configuration are written **once** in DNA
-packages and **instantiated** into every consuming project. This guide
-explains the system (gg_dna 5.x) for human developers.
+The DNA system keeps a family of repositories consistent: shared
+conventions, Claude skills, scripts, and configuration are written
+**once** in DNA packages and **instantiated** into every consuming
+project. This guide explains the system (gg_dna 5.x) for human
+developers.
+
+Two things are easy to confuse:
+
+- **`gg_dna` is the engine** — the tool that resolves, merges and
+  instantiates DNA. It carries no project conventions of its own.
+- **The DNA is the content** — it lives in the DNA packages
+  (`base_dna`, `dna_dart`, `dna-ts`, `ds-dna`, …). That is where you
+  edit anything you want your projects to inherit.
 
 ## What a DNA Is
 
@@ -37,7 +46,7 @@ once. For local development, `.gg/dna.json` can point a layer at a
 checkout instead of the published package:
 
 ```jsonc
-{ "dependencies": { "base-dna": { "path": "../base-dna" } } }
+{ "dependencies": { "base_dna": { "path": "../base_dna" } } }
 ```
 
 ## Public vs. Private: the `_` Convention
@@ -60,13 +69,13 @@ result with the project.
 
 Outcomes (golden-update semantics):
 
-| Situation                                        | Result                                                        |
-| ------------------------------------------------ | ------------------------------------------------------------- |
-| Everything up to date                            | Test passes                                                   |
-| The DNA produced updates                         | Files are written; the test fails once with "review & commit" |
-| An instance was edited by hand                   | Test fails, nothing is written                                |
-| A file to be overwritten has uncommitted changes | Test fails without writing                                    |
-| `LICENSE` missing                                | Test fails                                                    |
+| Situation | Result |
+|---|---|
+| Everything up to date | Test passes |
+| The DNA produced updates | Files are written and committed as `#gg: generated DNA` |
+| An instance was edited by hand | Test fails, nothing is written |
+| A file to be overwritten carries invalid changes | Test fails without writing |
+| `LICENSE` missing | Test fails |
 
 Two rules follow from this:
 
@@ -77,8 +86,13 @@ Two rules follow from this:
   updates.
 - **Instances belong to the DNA**: to change one, edit the DNA layer that
   owns it (or `dna/` in a `role: dna` repo) — the next test run
-  propagates the change. Hand-edited instances make the test fail with
-  exactly this hint.
+  propagates the change. When a generated file was edited by hand, the
+  test names both files:
+
+  ```text
+  Generated files modified by hand:
+  Move edits from doc/develop.md to base_dna/dna/doc/develop.md.
+  ```
 
 Getting started in a consumer:
 
@@ -152,13 +166,13 @@ variable); a project can override values via `"vars"` in `.gg/dna.json`.
 In DNA content, variables are referenced **with the `dna` prefix**, and
 each reference form renders the value in its own casing:
 
-| Reference         | Renders as (value `my-project`) |
-| ----------------- | ------------------------------- |
-| `unnamedProject`  | `myProject`                     |
-| `UnnamedProject`  | `MyProject`                     |
-| `unnamed_project` | `my_project`                    |
-| `UNNAMED_PROJECT` | `MY_PROJECT`                    |
-| `unnamed-project` | `my-project`                    |
+| Reference | Renders as (value `my-project`) |
+|---|---|
+| `unnamedProject` | `myProject` |
+| `UnnamedProject` | `MyProject` |
+| `unnamed_project` | `my_project` |
+| `UNNAMED_PROJECT` | `MY_PROJECT` |
+| `unnamed-project` | `my-project` |
 
 Values that are not identifier-like (sentences, spaces) are inserted
 verbatim in all forms. Unknown references stay literal.
@@ -181,14 +195,14 @@ instances are rewritten automatically.
 
 ```jsonc
 {
-  "role": "project", // "dna" for DNA repositories
-  "order": ["base-dna"], // layer order; default: dev-dependency order
+  "role": "project",            // "dna" for DNA repositories
+  "order": ["base_dna"],        // layer order; default: dev-dependency order
   "vars": { "projectName": "my-project" },
-  "fileNaming": "snake_case", // camelCase | kebab-case | keep
-  "dependencies": { "base-dna": { "path": "../base-dna" } },
+  "fileNaming": "snake_case",   // camelCase | kebab-case | keep
+  "dependencies": { "base_dna": { "path": "../base_dna" } },
   "config": {
-    "claude": { "claude_md": { "include": ["doc/conventions"] } },
-  },
+    "claude": { "claude_md": { "include": ["doc/conventions"] } }
+  }
 }
 ```
 
