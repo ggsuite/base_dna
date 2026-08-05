@@ -15,7 +15,7 @@
       "path": "dna",
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x3cf8e7480fb44395"
+      "hash": "0xeffcf929125c5c8a"
     }
   ],
   "vars": {
@@ -59,8 +59,56 @@
       "hash": "0x6d0659858a6a574f"
     },
     {
-      "path": "doc/code_review.md",
-      "hash": "0x23794bac35b124ff"
+      "path": "doc/01_install/01_vscode.md",
+      "hash": "0xa0da6a6877bb94c2"
+    },
+    {
+      "path": "doc/01_install/02_brew_on_mac.md",
+      "hash": "0x3ff81d12cdc6150f"
+    },
+    {
+      "path": "doc/01_install/03a_node_mac.md",
+      "hash": "0x4f383295e3a43359"
+    },
+    {
+      "path": "doc/01_install/03b_node_win.md",
+      "hash": "0x782756eb0ff83a0d"
+    },
+    {
+      "path": "doc/01_install/04_corepack.md",
+      "hash": "0x607522ddd35d5d36"
+    },
+    {
+      "path": "doc/01_install/05_github_cli.md",
+      "hash": "0x2a3ec36184ebcf41"
+    },
+    {
+      "path": "doc/01_install/06_azure_cli.md",
+      "hash": "0x1400e2b8d76dfead"
+    },
+    {
+      "path": "doc/01_install/07_flutter.md",
+      "hash": "0xb295179e5d6a8cb9"
+    },
+    {
+      "path": "doc/01_install/08_gg.md",
+      "hash": "0x637f7197356a4128"
+    },
+    {
+      "path": "doc/01_install/09_gg_workspace.md",
+      "hash": "0x8053039ec27b60c9"
+    },
+    {
+      "path": "doc/03_develop/develop.md",
+      "hash": "0x25b391b205f176ac"
+    },
+    {
+      "path": "doc/04_tools/rename_classes.md",
+      "hash": "0x1eee03eab16f7e4b"
+    },
+    {
+      "path": "doc/04_tools/vscode_tips.md",
+      "hash": "0x255ba8c6052f38a3"
     },
     {
       "path": "doc/conventions/code_conventions.md",
@@ -75,88 +123,12 @@
       "hash": "0xe7ca8d4c89f66d63"
     },
     {
-      "path": "doc/create_new_repo.md",
-      "hash": "0xc85c4bfa1dde3abc"
-    },
-    {
-      "path": "doc/develop.md",
-      "hash": "0x4f25bb9dd88183ee"
-    },
-    {
-      "path": "doc/get_access_to_github.md",
-      "hash": "0x26571c2ed7ecd463"
-    },
-    {
-      "path": "doc/get_access_to_npm.md",
-      "hash": "0x9fe21b7a32fe6f0b"
-    },
-    {
       "path": "doc/guides/claude_code.md",
       "hash": "0xe18e86905c716287"
     },
     {
       "path": "doc/guides/dna.md",
       "hash": "0xa4be08d19e927570"
-    },
-    {
-      "path": "doc/guides/gg.md",
-      "hash": "0xa2ddbf12b1b8af24"
-    },
-    {
-      "path": "doc/install/install_brew_on_mac.md",
-      "hash": "0xb1efdc19b6517f0f"
-    },
-    {
-      "path": "doc/install/install_corepack.md",
-      "hash": "0xd0128484cd7f5d36"
-    },
-    {
-      "path": "doc/install/install_docker_ubuntu.md",
-      "hash": "0xb1543aa5171ef863"
-    },
-    {
-      "path": "doc/install/install_flutter.md",
-      "hash": "0x400e762243a44dc1"
-    },
-    {
-      "path": "doc/install/install_gg.md",
-      "hash": "0xcc880c507cf04128"
-    },
-    {
-      "path": "doc/install/install_github_cli.md",
-      "hash": "0x9fc3af541eebcf41"
-    },
-    {
-      "path": "doc/install/install_node_mac.md",
-      "hash": "0xcd100b7027404bdd"
-    },
-    {
-      "path": "doc/install/install_node_win.md",
-      "hash": "0x782756eb0ff83a0d"
-    },
-    {
-      "path": "doc/install/install_sql_server.md",
-      "hash": "0x6c23d99ed805a5c7"
-    },
-    {
-      "path": "doc/install/install_vscode.md",
-      "hash": "0xa0da6a6877bb94c2"
-    },
-    {
-      "path": "doc/install/install_wsl_and_ubuntu.md",
-      "hash": "0xc68f5ca65dde4e28"
-    },
-    {
-      "path": "doc/install/prepare.md",
-      "hash": "0x71c541e3c08ac311"
-    },
-    {
-      "path": "doc/rename_classes.md",
-      "hash": "0x1eee03eab16f7e4b"
-    },
-    {
-      "path": "doc/vscode_tips.md",
-      "hash": "0x255ba8c6052f38a3"
     },
     {
       "path": "scripts/README.md",
@@ -236,7 +208,7 @@
     },
     {
       "path": "scripts/rename_class.js",
-      "hash": "0x48205bab2c2aff96"
+      "hash": "0x816005625a3c2f74"
     },
     {
       "path": "scripts/wait_for_pr.js",

@@ -97,7 +97,7 @@ gh pr create --base main --title "My pull request" --body " "
 
 ## Code review
 
-You need a code review? Read [code_review.md](./code_review.md).
+You need a code review? Read [code-review.md](./code-review.md).
 
 If you don't require a code review, auto merge the branch
 

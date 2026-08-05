@@ -13,7 +13,7 @@ watch pull requests.
 
 ## Install on Mac
 
-Make sure [brew is installed](./install_brew_on_mac.md)
+Make sure [brew is installed](./install-brew-on-mac.md)
 
 ```bash
 brew install gh
@@ -45,4 +45,4 @@ Restart your terminal when it was open during the installation, then run:
 gh --version
 ```
 
-Continue with [Get access to GitHub](./get_access_to_github.md) to log in.
+Continue with [Get access to GitHub](./get-access-to-github.md) to log in.

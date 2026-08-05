@@ -30,7 +30,7 @@ import { blue, gray, green, red, yellow } from './functions/colors.js';
 
 // .............................................................................
 const fileNameRexp = /(\.ts|\.md|\.log|\.js|\.json)$/;
-const excludedFiles = ['create_new_repo.md', 'rename_class.js'];
+const excludedFiles = ['create-new-repo.md', 'rename_class.js'];
 
 // .............................................................................
 
