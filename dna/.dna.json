@@ -15,7 +15,7 @@
       "path": "dna",
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xd9e7be130d0ca653"
+      "hash": "0xbc54c578a5af0d63"
     }
   ],
   "vars": {
@@ -96,7 +96,7 @@
     },
     {
       "path": "doc/01_install/09_gg_workspace.md",
-      "hash": "0xd745826986e2fad2"
+      "hash": "0x4dc9d53e87d7fd6b"
     },
     {
       "path": "doc/03_develop/develop.md",
