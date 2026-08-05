@@ -7,7 +7,7 @@
       "path": null,
       "resolvedVersion": "5.0.0",
       "via": null,
-      "hash": "0x730f5646ad3a3842"
+      "hash": "0xbaf6401fbe77be85"
     },
     {
       "name": "self",
@@ -15,13 +15,13 @@
       "path": "dna",
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x093aab2b76a91195"
+      "hash": "0xb7468d8c77064595"
     }
   ],
   "claude": {
     "claudeMdInclude": null
   },
   "baseVersion": "5.0.0",
-  "baseHash": "0x730f5646ad3a3842",
+  "baseHash": "0xbaf6401fbe77be85",
   "hash": null
 }
