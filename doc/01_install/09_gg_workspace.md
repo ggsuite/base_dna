@@ -24,5 +24,5 @@ gg do init workspace
 ## Add your repositories
 
 ```bash
-https://github.com/ggsuite
+gg do add https://github.com/ggsuite
 ```
