@@ -18,10 +18,6 @@
       "hash": "0x345dd9e198274000"
     },
     {
-      "path": ".gitattributes",
-      "hash": "0x339250e2cf083de9"
-    },
-    {
       "path": ".prettierignore",
       "hash": "0xb01d022007df4f11"
     },
@@ -31,7 +27,7 @@
     },
     {
       "path": ".vscode/extensions.json",
-      "hash": "0x28ab666f6f720c72"
+      "hash": "0x42dbd078830bdf05"
     },
     {
       "path": ".vscode/settings.json",
@@ -39,7 +35,7 @@
     },
     {
       "path": "LICENSE",
-      "hash": "0x6d0659858a6a574f"
+      "hash": "0x58ed9cf06c6568b4"
     },
     {
       "path": "doc/01_install/01_vscode.md",
