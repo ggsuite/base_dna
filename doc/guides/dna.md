@@ -182,8 +182,8 @@ verbatim in all forms. Unknown references stay literal.
 DNA files use **canonical kebab-case** names (`code_conventions.md`). At
 instantiation, names are converted to the target's standard:
 
-- `pubspec.yaml` or `package.json` present → snake_case
-  (`code_conventions.md`)
+- `pubspec.yaml` present → snake_case (`code_conventions.md`)
+- `package.json` present → kebab-case (`code_conventions.md`)
 - configurable via `"fileNaming"` in `.gg/dna.json`
   (`snake_case`, `camelCase`, `kebab-case`, `keep`)
 
