@@ -1,0 +1,33 @@
+{
+  "recommendations": [
+    "alefragnani.bookmarks",
+    "bierner.markdown-mermaid",
+    "bierner.markdown-preview-github-styles",
+    "brunnerh.insert-unicode",
+    "clemenspeters.format-json",
+    "davidanson.vscode-markdownlint",
+    "dotjoshjohnson.xml",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "flesler.url-encode",
+    "geeklearningio.graphviz-markdown-preview",
+    "github.copilot-chat",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "hediet.vscode-drawio",
+    "jock.svg",
+    "marioqueiros.camelcase",
+    "martinwepner.pascalcase-camelcase-to-snakecase-converter",
+    "mdickin.markdown-shortcuts",
+    "nopeslide.vscode-drawio-plugin-mermaid",
+    "pkief.material-icon-theme",
+    "psioniq.psi-header",
+    "rebornix.project-snippets",
+    "ryanluker.vscode-coverage-gutters",
+    "stephanvs.dot",
+    "streetsidesoftware.code-spell-checker",
+    "tyriar.sort-lines",
+    "viablelab.capitalize",
+    "yzhang.markdown-all-in-one"
+  ]
+}

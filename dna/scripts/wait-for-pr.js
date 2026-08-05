@@ -1,6 +1,6 @@
 /*
  * @license
- * Copyright (c) ggsuite
+ * Copyright (c) dnaCopyrightHolder
  *
  * Use of this source code is governed by terms that can be
  * found in the LICENSE file in the root of this package.
@@ -19,7 +19,7 @@
  */
 
 import { blue, green, red, yellow } from './functions/colors.js';
-import { expectGhInstalled } from './functions/gh_is_installed.js';
+import { expectGhInstalled } from './functions/gh-is-installed.js';
 import { runCommand } from './functions/run-command.js';
 
 function getPRUrl() {

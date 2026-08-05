@@ -1,12 +1,11 @@
 /*
  * @license
- * Copyright (c) ggsuite
+ * Copyright (c) dnaCopyrightHolder
  *
  * Use of this source code is governed by terms that can be
  * found in the LICENSE file in the root of this package.
  */
 
-// checkRepo.js
 import { execSync } from 'child_process';
 
 /**
@@ -43,7 +42,7 @@ export function isCleanMainBranch(path) {
   const cwd = path ?? '.';
 
   try {
-    // Aktuellen Branch ermitteln
+    // Determine the current branch
     const branch = execSync('git rev-parse --abbrev-ref HEAD', {
       cwd,
     })
@@ -57,10 +56,10 @@ export function isCleanMainBranch(path) {
       return false;
     }
 
-    // Git-Fetch ausführen (still)
+    // Run git fetch (silently)
     execSync('git fetch', { stdio: 'ignore', cwd });
 
-    // Prüfen, ob main auf dem neuesten Stand mit origin/main ist
+    // Check whether main is up to date with origin/main
     const revList = execSync(
       'git rev-list --left-right --count origin/main...main',
       { cwd },

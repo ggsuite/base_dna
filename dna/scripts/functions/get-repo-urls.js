@@ -1,6 +1,6 @@
 /*
  * @license
- * Copyright (c) ggsuite
+ * Copyright (c) dnaCopyrightHolder
  *
  * Use of this source code is governed by terms that can be
  * found in the LICENSE file in the root of this package.
@@ -15,7 +15,7 @@ import { green, yellow } from "./colors.js";
 const execAsync = promisify(exec);
 
 // GitHub organization or user
-const org = "ggsuite";
+const org = "dnaCompany";
 
 export async function getRepoUrls() {
   try {
