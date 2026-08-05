@@ -2,6 +2,7 @@
   "company": "ggsuite",
   "copyrightHolder": "ggsuite",
   "copyrightYear": "2026",
-  "orgUrl": "https://github.com/ggsuite",
-  "projectName": "unnamed-project"
+  "gitOrgUrl": "https://github.com/<your-org>",
+  "projectName": "<your-project>",
+  "jiraPrefix": "GGS"
 }

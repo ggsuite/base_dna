@@ -6,7 +6,7 @@
 
 - gg_dna 5.0 replica layout: `dna/` mirrors the project root
 - `dna/_vars.json` with the base variable defaults (`company`,
-  `copyrightHolder`, `copyrightYear`, `orgUrl`, `projectName`)
+  `copyrightHolder`, `copyrightYear`, `gitOrgUrl`, `projectName`)
 - `dna/LICENSE` MIT template with variable placeholders
 - `dna/.vscode/settings.json` + `extensions.json` (ecosystem-neutral
   split of the former template project settings)

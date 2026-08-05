@@ -11,7 +11,7 @@ inherits via [gg_dna](https://github.com/ggsuite/gg_dna):
   `develop.md`, install guides, org guides)
 - `dna/scripts/` — repo-management node scripts
 - `dna/_vars.json` — the base variable defaults (`company`,
-  `copyrightHolder`, `orgUrl`, `projectName`, …)
+  `copyrightHolder`, `gitOrgUrl`, `projectName`, …)
 
 ## Usage
 
