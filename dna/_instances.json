@@ -22,12 +22,20 @@
       "hash": "0x339250e2cf083de9"
     },
     {
+      "path": ".prettierignore",
+      "hash": "0xb01d022007df4f11"
+    },
+    {
+      "path": ".prettierrc",
+      "hash": "0xf2be2549d1b502ae"
+    },
+    {
       "path": ".vscode/extensions.json",
-      "hash": "0xb1b4ff7a9efd2aca"
+      "hash": "0x28ab666f6f720c72"
     },
     {
       "path": ".vscode/settings.json",
-      "hash": "0xdec5bd697c4b6849"
+      "hash": "0x35854fff835a5754"
     },
     {
       "path": "LICENSE",
@@ -58,32 +66,20 @@
       "hash": "0x2a3ec36184ebcf41"
     },
     {
-      "path": "doc/01_install/06_azure_cli.md",
-      "hash": "0x1400e2b8d76dfead"
-    },
-    {
-      "path": "doc/01_install/07_flutter.md",
+      "path": "doc/01_install/06_flutter.md",
       "hash": "0xb295179e5d6a8cb9"
     },
     {
-      "path": "doc/01_install/08_gg.md",
+      "path": "doc/01_install/07_gg.md",
       "hash": "0x637f7197356a4128"
     },
     {
-      "path": "doc/01_install/09_gg_workspace.md",
+      "path": "doc/01_install/08_gg_workspace.md",
       "hash": "0x846766914bb56a84"
     },
     {
-      "path": "doc/03_develop/develop.md",
-      "hash": "0x25b391b205f176ac"
-    },
-    {
-      "path": "doc/04_tools/rename_classes.md",
-      "hash": "0x1eee03eab16f7e4b"
-    },
-    {
-      "path": "doc/04_tools/vscode_tips.md",
-      "hash": "0x255ba8c6052f38a3"
+      "path": "doc/02_develop/develop.md",
+      "hash": "0xcc0c7c0dd7e5ee3c"
     },
     {
       "path": "doc/conventions/code_conventions.md",
@@ -108,86 +104,6 @@
     {
       "path": "scripts/README.md",
       "hash": "0x18eb11ecbaaff8e8"
-    },
-    {
-      "path": "scripts/add_version_tag.js",
-      "hash": "0x275d847adbc5f5d5"
-    },
-    {
-      "path": "scripts/copy_file.js",
-      "hash": "0xd200ca09da6315ae"
-    },
-    {
-      "path": "scripts/create_branch.js",
-      "hash": "0x8e354ba116818a7f"
-    },
-    {
-      "path": "scripts/delete_feature_branch.js",
-      "hash": "0xbf312639f559bca9"
-    },
-    {
-      "path": "scripts/functions/az_is_installed.js",
-      "hash": "0x0ee4de4f3d7c327a"
-    },
-    {
-      "path": "scripts/functions/colors.js",
-      "hash": "0x19f574314a81d26b"
-    },
-    {
-      "path": "scripts/functions/current_branch.js",
-      "hash": "0xe7de2221396ed914"
-    },
-    {
-      "path": "scripts/functions/directories.js",
-      "hash": "0xe1dbe3041c8031b9"
-    },
-    {
-      "path": "scripts/functions/get_repo_urls.js",
-      "hash": "0x02074fab96421ac1"
-    },
-    {
-      "path": "scripts/functions/get_version.js",
-      "hash": "0x075cbe4be6d0420f"
-    },
-    {
-      "path": "scripts/functions/gh_is_installed.js",
-      "hash": "0x41fcbaadab06624e"
-    },
-    {
-      "path": "scripts/functions/is_clean_repo.js",
-      "hash": "0x399b9dc8617b1c38"
-    },
-    {
-      "path": "scripts/functions/is_main_up_to_date.js",
-      "hash": "0x4f2c048392d63922"
-    },
-    {
-      "path": "scripts/functions/pull_request_url.js",
-      "hash": "0x8d5fe940800889c4"
-    },
-    {
-      "path": "scripts/functions/run_command.js",
-      "hash": "0x2aca5129280594e3"
-    },
-    {
-      "path": "scripts/functions/sync_folders.js",
-      "hash": "0x4947383e30ca3f93"
-    },
-    {
-      "path": "scripts/is_clean_repo.js",
-      "hash": "0x8326a6fd6704cd36"
-    },
-    {
-      "path": "scripts/print_pull_request_url.js",
-      "hash": "0x881b6e65f025eff8"
-    },
-    {
-      "path": "scripts/rename_class.js",
-      "hash": "0x816005625a3c2f74"
-    },
-    {
-      "path": "scripts/wait_for_pr.js",
-      "hash": "0x1ce957898a1c5dc5"
     }
   ]
 }
