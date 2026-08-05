@@ -15,7 +15,7 @@
       "path": "dna",
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x12b9a263fb25d5af"
+      "hash": "0x58c6d2affedcd5af"
     }
   ],
   "vars": {
@@ -52,7 +52,7 @@
     },
     {
       "path": ".vscode/settings.json",
-      "hash": "0x79abf015cfb06849"
+      "hash": "0xdec5bd697c4b6849"
     },
     {
       "path": "LICENSE",
