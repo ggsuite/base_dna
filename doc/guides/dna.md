@@ -168,11 +168,11 @@ each reference form renders the value in its own casing:
 
 | Reference | Renders as (value `my-project`) |
 |---|---|
-| `unnamedProject` | `myProject` |
-| `UnnamedProject` | `MyProject` |
-| `unnamed_project` | `my_project` |
-| `UNNAMED_PROJECT` | `MY_PROJECT` |
-| `unnamed-project` | `my-project` |
+| `<your-project>` | `myProject` |
+| `<your-project>` | `MyProject` |
+| `<your-project>` | `my_project` |
+| `<your-project>` | `MY_PROJECT` |
+| `<your-project>` | `my-project` |
 
 Values that are not identifier-like (sentences, spaces) are inserted
 verbatim in all forms. Unknown references stay literal.

@@ -24,5 +24,5 @@ gg do init workspace
 ## Add your repositories
 
 ```bash
-gg do add https://github.com/ggsuite
+gg do add dnaOrgUrl
 ```
