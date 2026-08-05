@@ -15,7 +15,7 @@
       "path": "dna",
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x58c6d2affedcd5af"
+      "hash": "0x3cf8e7480fb44395"
     }
   ],
   "vars": {
@@ -80,7 +80,7 @@
     },
     {
       "path": "doc/develop.md",
-      "hash": "0x8e0fbb9a31e7b008"
+      "hash": "0x4f25bb9dd88183ee"
     },
     {
       "path": "doc/get_access_to_github.md",
@@ -99,59 +99,55 @@
       "hash": "0xa4be08d19e927570"
     },
     {
-      "path": "doc/guides/gg_kidney.md",
-      "hash": "0x84cd892c0960c4e9"
+      "path": "doc/guides/gg.md",
+      "hash": "0xa2ddbf12b1b8af24"
     },
     {
-      "path": "doc/guides/rljson.md",
-      "hash": "0x2b360c9f3a091503"
-    },
-    {
-      "path": "doc/install_brew_on_mac.md",
+      "path": "doc/install/install_brew_on_mac.md",
       "hash": "0xb1efdc19b6517f0f"
     },
     {
-      "path": "doc/install_corepack.md",
+      "path": "doc/install/install_corepack.md",
       "hash": "0xd0128484cd7f5d36"
     },
     {
-      "path": "doc/install_docker_ubuntu.md",
+      "path": "doc/install/install_docker_ubuntu.md",
       "hash": "0xb1543aa5171ef863"
     },
     {
-      "path": "doc/install_flutter.md",
+      "path": "doc/install/install_flutter.md",
       "hash": "0x400e762243a44dc1"
     },
     {
-      "path": "doc/install_gg.md",
-      "hash": "0xa92069515ccb1ec9"
+      "path": "doc/install/install_gg.md",
+      "hash": "0xcc880c507cf04128"
     },
     {
-      "path": "doc/install_github_cli.md",
+      "path": "doc/install/install_github_cli.md",
       "hash": "0x9fc3af541eebcf41"
     },
     {
-      "path": "doc/install_node_mac.md",
+      "path": "doc/install/install_node_mac.md",
       "hash": "0xcd100b7027404bdd"
     },
     {
-      "path": "doc/install_node_win.md",
+      "path": "doc/install/install_node_win.md",
       "hash": "0x782756eb0ff83a0d"
     },
     {
-      "path": "doc/install_sql_server.md",
+      "path": "doc/install/install_sql_server.md",
       "hash": "0x6c23d99ed805a5c7"
     },
     {
-      "path": "doc/install_vscode.md",
+      "path": "doc/install/install_vscode.md",
       "hash": "0xa0da6a6877bb94c2"
     },
     {
-      "path": "doc/install_wsl_and_ubuntu.md",
+      "path": "doc/install/install_wsl_and_ubuntu.md",
       "hash": "0xc68f5ca65dde4e28"
     },
     {
-      "path": "doc/prepare.md",
+      "path": "doc/install/prepare.md",
       "hash": "0x71c541e3c08ac311"
     },
     {

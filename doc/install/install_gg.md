@@ -63,16 +63,13 @@ dart pub global activate gg
 
 ## Usage
 
-`gg` behaves differently depending on where you call it:
-
-- In a **ticket workspace** (a directory tree containing `.master/` or
-  `tickets/`), `gg <command>` operates on all repositories of the ticket.
-- In a **single repository**, use `gg one <command>`.
-
-Every command supports `-h` and `--help`:
+`gg` is ticket driven: run it inside a ticket and every action applies to
+all repositories that belong to that ticket.
 
 ```bash
-gg do --help
+gg                # the command groups: do, can, did
+gg do -h          # everything you can act on
+gg can commit     # check before committing
 ```
 
-See also [Working with gg and kd](./guides/gg_kidney.md).
+See also [Working with gg](../guides/gg.md).

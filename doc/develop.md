@@ -51,7 +51,7 @@ ecosystem.
 
 - [Vscode tips](./vscode_tips.md)
 - [Rename classes](./rename_classes.md)
-- [Working with gg and kd](./guides/gg_kidney.md)
+- [Working with gg](./guides/gg.md)
 
 ## Commit
 
