@@ -1,0 +1,41 @@
+{
+  "name": "@tssuite/base-dna",
+  "version": "1.0.0",
+  "description": "The base DNA of our projects - shared configs, docs, scripts and agent skills inherited by every repository via gg_dna.",
+  "keywords": [
+    "dna",
+    "gg_dna",
+    "conventions",
+    "scaffolding"
+  ],
+  "homepage": "https://github.com/ggsuite/base_dna",
+  "bugs": "https://github.com/ggsuite/base_dna/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggsuite/base_dna.git"
+  },
+  "type": "module",
+  "files": [
+    "dna",
+    ".gg/dna.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "sync-version": "dart run scripts/sync_version.dart",
+    "test:dart": "dart test",
+    "test": "pnpm run sync-version && pnpm run test:dart",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

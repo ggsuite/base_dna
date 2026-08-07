@@ -1,1 +1,5 @@
 * text=auto eol=lf
+CHANGELOG.md merge=union
+.gg/gg.json merge=ours
+pubspec.lock merge=ours
+package-lock.json merge=ours
