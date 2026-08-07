@@ -1,8 +1,13 @@
 {
-  "name": "base_dna",
+  "name": "@tssuite/base-dna",
   "version": "1.0.0",
   "description": "The base DNA of our projects - shared configs, docs, scripts and agent skills inherited by every repository via gg_dna.",
-  "keywords": ["dna", "gg_dna", "conventions", "scaffolding"],
+  "keywords": [
+    "dna",
+    "gg_dna",
+    "conventions",
+    "scaffolding"
+  ],
   "homepage": "https://github.com/ggsuite/base_dna",
   "bugs": "https://github.com/ggsuite/base_dna/issues",
   "license": "MIT",
@@ -11,7 +16,12 @@
     "url": "git+https://github.com/ggsuite/base_dna.git"
   },
   "type": "module",
-  "files": ["dna", ".gg/dna.json", "README.md", "LICENSE"],
+  "files": [
+    "dna",
+    ".gg/dna.json",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=22"
   },
