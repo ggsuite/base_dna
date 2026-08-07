@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- Fix pana issues
+
+## 0.0.2 - 2026-08-07
+
+### Changed
+
+- Define dna repos
+- Define DNA repos
+
 ## 1.0.0 - 2026-08-05
 
 ### Added
@@ -19,13 +32,6 @@ gg_dna_ggsuite
 - `dna/scripts/` node repo-management scripts (English headers)
 - Hybrid packaging: npm + pub `base_dna`; `role: "dna"` with
 self-instantiation via the placed DNA test
-
-## 0.0.2 - 2026-08-07
-
-### Changed
-
-- Define dna repos
-- Define DNA repos
 
 ## 0.0.1 - 2026-08-05
 

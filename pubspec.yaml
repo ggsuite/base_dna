@@ -1,8 +1,7 @@
 name: base_dna
 description: The base DNA of our projects - shared configs, docs, scripts and agent skills inherited by every repository via gg_dna.
-version: 0.0.2
+version: 1.0.0
 repository: https://github.com/ggsuite/base_dna.git
-publish_to: none
 
 environment:
   sdk: ">=3.11.0 <4.0.0"
