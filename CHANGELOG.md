@@ -5,6 +5,7 @@
 ### Changed
 
 - Define dna repos
+- Define DNA repos
 
 ## 1.0.0 - 2026-08-05
 

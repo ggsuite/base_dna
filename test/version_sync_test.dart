@@ -24,8 +24,9 @@ void main() {
       ).firstMatch(File('pubspec.yaml').readAsStringSync());
       expect(match, isNotNull, reason: 'no version in pubspec.yaml');
 
-      final pkg = jsonDecode(File('package.json').readAsStringSync())
-          as Map<String, dynamic>;
+      final pkg =
+          jsonDecode(File('package.json').readAsStringSync())
+              as Map<String, dynamic>;
       expect(
         pkg['version'],
         match!.group(1),
@@ -34,8 +35,9 @@ void main() {
     });
 
     test('ships the dna folder to npm consumers', () {
-      final pkg = jsonDecode(File('package.json').readAsStringSync())
-          as Map<String, dynamic>;
+      final pkg =
+          jsonDecode(File('package.json').readAsStringSync())
+              as Map<String, dynamic>;
       expect(pkg['files'], contains('dna'));
       expect(pkg['name'], '@tssuite/base-dna');
     });
