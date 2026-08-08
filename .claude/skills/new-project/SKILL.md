@@ -3,6 +3,8 @@ name: new-project
 description: Creates a new repository / package. Confirms name, target folder, and description with the user and calls the create tool that is customary in the project. Use this skill when the user says something like "create a new project", "create a new repository", "new package", or provides a GitHub/GitLab link for a still-empty repository.
 ---
 
+<!Test>
+
 # Create a New Project
 
 You create new repositories for the workspace. Stick strictly to this
