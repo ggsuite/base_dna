@@ -1,27 +1,10 @@
 {
-  "version": 5,
-  "layers": [
-    {
-      "name": "base",
-      "package": "gg_dna",
-      "path": null,
-      "resolvedVersion": "4.0.0",
-      "via": null,
-      "hash": "0x772332bb29b2f2d6"
-    },
-    {
-      "name": "self",
-      "package": null,
-      "path": "dna",
-      "resolvedVersion": null,
-      "via": null,
-      "hash": "0xd9dfa49f99d20b95"
-    }
-  ],
-  "claude": {
-    "claudeMdInclude": null
-  },
-  "baseVersion": "4.0.0",
-  "baseHash": "0x772332bb29b2f2d6",
-  "hash": null
+  // base_dna is a DNA package: dna/ is authored by hand and is the last
+  // layer of its own instantiation. "role": "dna" is also what makes this
+  // package usable as a layer at all — a dna/ folder alone does not.
+  "version": 1,
+  "role": "dna",
+
+  // The root of the tree: everything below gg_dna's own base DNA.
+  "layers": []
 }
