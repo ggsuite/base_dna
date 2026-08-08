@@ -6,6 +6,10 @@
 
 - Resolve DNA like dart or npm packages
 
+### Fixed
+
+- Fix issues in markdown overrides
+
 ## 1.0.1 - 2026-08-08
 
 ### Fixed
