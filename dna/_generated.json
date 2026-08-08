@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 1,
   "layers": [
     {
       "name": "base",
@@ -7,7 +7,7 @@
       "ecosystem": null,
       "resolvedVersion": "5.0.0",
       "via": null,
-      "hash": "0x227552323329adb6"
+      "hash": "0xd9950b133329adb6"
     },
     {
       "name": "self",
@@ -22,7 +22,7 @@
     "claudeMdInclude": null
   },
   "baseVersion": "5.0.0",
-  "baseHash": "0x227552323329adb6",
+  "baseHash": "0xd9950b133329adb6",
   "hash": null,
   "instances": [
     {
@@ -119,7 +119,7 @@
     },
     {
       "path": "doc/guides/dna.md",
-      "hash": "0xf7cf499542fdc493"
+      "hash": "0x199fc5492364c493"
     },
     {
       "path": "scripts/README.md",
