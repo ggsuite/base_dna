@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xa7edd83ef3bf256a"
+      "hash": "0x0974141d79571f3e"
     }
   ],
   "claude": {
@@ -31,7 +31,7 @@
     },
     {
       "path": ".claude/skills/new-project/SKILL.md",
-      "hash": "0x6a0d1c04b023c3ec"
+      "hash": "0xf863e80c14b5e980"
     },
     {
       "path": ".claude/skills/new-ticket/SKILL.md",
