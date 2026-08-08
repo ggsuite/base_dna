@@ -1,5 +1,0 @@
-{
-  // base_dna is a DNA package: dna/ is authored by hand and is the last
-  // layer of its own instantiation.
-  "role": "dna"
-}
