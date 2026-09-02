@@ -29,7 +29,7 @@ Replace `A 60-70 char description of my new project` by a short project descript
 
 ## Create a repo
 
-Open <https://github.com/https://github.com/ggsuite>
+Open <https://github.com/ggsuite>
 
 Select `Repositories`
 
@@ -58,7 +58,7 @@ node scripts/setup-github-repo.js
 
 Want to apply the changes manually? Do this:
 
-Open <https://github.com/https://github.com/ggsuite/my_new_repo>
+Open <https://github.com/ggsuite/my_new_repo>
 
 Click `Settings`
 
@@ -111,7 +111,7 @@ When asked, Authenticate
 
 ## Let branches be deleted after the merge
 
-Open <https://github.com/https://github.com/ggsuite/my_new_repo>
+Open <https://github.com/ggsuite/my_new_repo>
 
 Click `Settings`
 
@@ -131,7 +131,7 @@ Apply the following settings:
 Checkout the project
 
 ```bash
-git clone git@github.com:https://github.com/ggsuite/my_new_repo.git
+git clone git@github.com:ggsuite/my_new_repo.git
 cd my_new_repo
 dart pub upgrade
 ```
