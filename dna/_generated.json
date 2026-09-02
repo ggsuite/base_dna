@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xc09d5b3ec4b089b6"
+      "hash": "0xca6bcd297cf0a448"
     }
   ],
   "claude": {
@@ -283,7 +283,7 @@
     },
     {
       "path": "scripts/functions/current-branch.js",
-      "hash": "0xb9ebbadf45893278"
+      "hash": "0x6610874731cac4e8"
     },
     {
       "path": "scripts/functions/directories.js",
@@ -303,11 +303,11 @@
     },
     {
       "path": "scripts/functions/is-main-up-to-date.js",
-      "hash": "0xe1ab1826d0ddd039"
+      "hash": "0x305e8c2e6acee6d6"
     },
     {
       "path": "scripts/functions/pull-request-url.js",
-      "hash": "0x5398755a61a59928"
+      "hash": "0xf6afe906fbd542f1"
     },
     {
       "path": "scripts/functions/run-command.js",
