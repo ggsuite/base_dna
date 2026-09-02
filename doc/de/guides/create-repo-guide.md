@@ -30,7 +30,7 @@ Projektbeschreibung
 
 ## Lege ein Repo an
 
-Öffne <https://github.com/https://github.com/ggsuite>
+Öffne <https://github.com/ggsuite>
 
 Wähle `Repositories`
 
@@ -61,7 +61,7 @@ node scripts/setup-github-repo.js
 
 Du willst die Änderungen von Hand vornehmen? Dann so:
 
-Öffne <https://github.com/https://github.com/ggsuite/my_new_repo>
+Öffne <https://github.com/ggsuite/my_new_repo>
 
 Klicke `Settings`
 
@@ -114,7 +114,7 @@ Authentifiziere dich, wenn du danach gefragt wirst
 
 ## Lass Branches nach dem Merge löschen
 
-Öffne <https://github.com/https://github.com/ggsuite/my_new_repo>
+Öffne <https://github.com/ggsuite/my_new_repo>
 
 Klicke `Settings`
 
@@ -134,7 +134,7 @@ Setze folgende Einstellungen:
 Checke das Projekt aus
 
 ```bash
-git clone git@github.com:https://github.com/ggsuite/my_new_repo.git
+git clone git@github.com:ggsuite/my_new_repo.git
 cd my_new_repo
 dart pub upgrade
 ```
